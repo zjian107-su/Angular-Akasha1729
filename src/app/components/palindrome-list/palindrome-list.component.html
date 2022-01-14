@@ -1,0 +1,10 @@
+<div>
+
+  <h1> Daniel's Panlindome v2</h1>
+  <div *ngFor="let item of panlindomeList">
+    <div [ngStyle]="{'background-color': isPalindrome(item)? 'blue':'red'}">
+      <h2>{{item}}</h2>
+    </div>
+  </div>
+
+</div>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { palindromeList } from './constants';
+
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,4 @@ import { palindromeList } from './constants';
 })
 export class AppComponent {
   title: string = 'Angular-Interview-Exercises';
-  panlindomeList: string[] = palindromeList;
-
-  isPalindrome(str: string): boolean {
-    return str === str.split('').reverse().join('');
-  }
 }

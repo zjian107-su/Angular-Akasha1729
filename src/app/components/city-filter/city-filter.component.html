@@ -1,0 +1,15 @@
+<h1> Daniel's Filtered Cities</h1>
+
+<h2> Unfinishd Exercise </h2>
+
+<label for="search">Search</label>
+<br />
+<input id="search" type="text" [(ngModel)]="filterString" />
+<br />
+<button (click)="filterList()">Filter</button>
+
+<p> Your searched query is: {{filterString}}</p>
+
+<div *ngFor="let city of finalList">
+  <p> {{city}}</p>
+</div>

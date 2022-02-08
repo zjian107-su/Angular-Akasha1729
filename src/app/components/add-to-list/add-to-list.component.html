@@ -1,0 +1,14 @@
+<h1>Daniel</h1>
+
+<label for="add"> Add to List </label>
+<br />
+<input id="add" type="text" [(ngModel)]="todoItem" />
+<br />
+
+<button (click)="addToList()">Add to List</button>
+
+<br />
+
+<div *ngFor="let item of todoList">
+  <p> {{item}} </p>
+</div>

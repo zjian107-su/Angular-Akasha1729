@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-to-list.component.css'],
 })
 export class AddToListComponent {
-  todoItem: string = 'Mike';
+  todoItem: string = '';
 
   todoList: string[] = [];
 

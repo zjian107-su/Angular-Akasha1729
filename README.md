@@ -4,3 +4,5 @@
 
 
 2. Show filtered list of cities. Maybe debounce how often you can filter or search. **Skills**: pipe, filter, debounce. Component name: `citie-filter`
+
+3. Add item into a list. **Skills**: two way binding, ngModel. Component name: `add-item`

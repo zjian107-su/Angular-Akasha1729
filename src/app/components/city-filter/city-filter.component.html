@@ -1,12 +1,10 @@
 <h1> Daniel's Filtered Cities</h1>
 
-<h2> Unfinishd Exercise </h2>
-
 <label for="search">Search</label>
 <br />
-<input id="search" type="text" [(ngModel)]="filterString" />
+<input id="search" type="text" [(ngModel)]="filterString" class="input input-bordered input-primary w-full max-w-xs" />
 <br />
-<button (click)="filterList()">Filter</button>
+<button class="btn btn-accent" (click)="filterList()">Filter</button>
 
 <p> Your searched query is: {{filterString}}</p>
 

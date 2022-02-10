@@ -1,0 +1,16 @@
+<h1> Daniel's Counter </h1>
+
+<p class="text-3xl"> {{this.count}} </p>
+
+<div class="flex flex-row">
+  <button class="btn btn-primary" (click)="increment()">
+    Increment
+  </button>
+
+  <div> </div>
+  <button class="btn btn-primary" (click)="decrement()">
+    Decrement
+  </button>
+</div>
+
+<button class="btn btn-secondary" (click)="reset()"> Reset </button>

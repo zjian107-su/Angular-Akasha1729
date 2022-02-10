@@ -7,6 +7,7 @@ import { PalindromeListComponent } from './components/palindrome-list/palindrome
 import { CityFilterComponent } from './components/city-filter/city-filter.component';
 import { FormsModule } from '@angular/forms';
 import { AddToListComponent } from './components/add-to-list/add-to-list.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { AddToListComponent } from './components/add-to-list/add-to-list.compone
     PalindromeListComponent,
     CityFilterComponent,
     AddToListComponent,
+    CounterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

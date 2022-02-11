@@ -8,6 +8,7 @@ import { CityFilterComponent } from './components/city-filter/city-filter.compon
 import { FormsModule } from '@angular/forms';
 import { AddToListComponent } from './components/add-to-list/add-to-list.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { CounterAutoIncrementComponent } from './components/counter-auto-increment/counter-auto-increment.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CounterComponent } from './components/counter/counter.component';
     CityFilterComponent,
     AddToListComponent,
     CounterComponent,
+    CounterAutoIncrementComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

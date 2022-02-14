@@ -7,6 +7,8 @@
 
 3. Add item into a list. **Skills**: two way binding, ngModel. Component name: `add-item`
 
-4. Counter. **Skills**: two way binding, ngModel. Component name: `counter`
+4. Counter. **Skills**: two way binding. Component name: `counter`
 
-5. Counter with auto-increment. **Skills**: two way binding, ngModel, setInterval. Component name: `counter-auto`
+5. Counter with auto-increment. **Skills**: two way binding, setInterval. Component name: `counter-auto`
+
+6. Fibonacci sequence. **Skills**: recursion. Component name: `fibonacci`

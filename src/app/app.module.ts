@@ -10,6 +10,7 @@ import { AddToListComponent } from './components/add-to-list/add-to-list.compone
 import { CounterComponent } from './components/counter/counter.component';
 import { CounterAutoIncrementComponent } from './components/counter-auto-increment/counter-auto-increment.component';
 import { FibonacciComponent } from './components/fibonacci/fibonacci.component';
+import { DiPlaygroundComponent } from './components/di-playground/di-playground.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FibonacciComponent } from './components/fibonacci/fibonacci.component';
     CounterComponent,
     CounterAutoIncrementComponent,
     FibonacciComponent,
+    DiPlaygroundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

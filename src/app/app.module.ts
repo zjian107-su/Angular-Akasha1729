@@ -11,6 +11,9 @@ import { CounterComponent } from './components/counter/counter.component';
 import { CounterAutoIncrementComponent } from './components/counter-auto-increment/counter-auto-increment.component';
 import { FibonacciComponent } from './components/fibonacci/fibonacci.component';
 import { DiPlaygroundComponent } from './components/di-playground/di-playground.component';
+import { HighlightDirective } from './directives/highlight.directive';
+import { CustomAttributeDirectiveComponent } from './components/custom-attribute-directive/custom-attribute-directive.component';
+import { HoverHighlighDirective } from './directives/hover-highligh.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { DiPlaygroundComponent } from './components/di-playground/di-playground.
     CounterAutoIncrementComponent,
     FibonacciComponent,
     DiPlaygroundComponent,
+    HighlightDirective,
+    CustomAttributeDirectiveComponent,
+    HoverHighlighDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

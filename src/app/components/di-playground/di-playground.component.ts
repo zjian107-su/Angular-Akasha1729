@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MyServiceService } from 'src/app/services/my-service.service';
+import { NameChangeService} from 'src/app/services/name-change.service';
 
 @Component({
   selector: 'app-di-playground',
@@ -7,12 +7,12 @@ import { MyServiceService } from 'src/app/services/my-service.service';
   styleUrls: ['./di-playground.component.css'],
 })
 export class DiPlaygroundComponent {
-  constructor(public myServiceService: MyServiceService) {}
+  constructor(public nameChangeService: NameChangeService) {}
   tempName: string = '';
 
   ngOnInit(): void {
     console.log('init Daniel');
-    this.myServiceService.print();
+    this.nameChangeService.print();
   }
 
   componentChangeName(): void {
@@ -20,8 +20,8 @@ export class DiPlaygroundComponent {
       alert("Name can't be empty");
       return;
     }
-    this.myServiceService.changeName(this.tempName);
+    this.nameChangeService.changeName(this.tempName);
     this.tempName = '';
-    this.myServiceService.print();
+    this.nameChangeService.print();
   }
 }

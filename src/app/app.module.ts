@@ -13,7 +13,7 @@ import { FibonacciComponent } from './components/fibonacci/fibonacci.component';
 import { DiPlaygroundComponent } from './components/di-playground/di-playground.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { CustomAttributeDirectiveComponent } from './components/custom-attribute-directive/custom-attribute-directive.component';
-import { HoverHighlighDirective } from './directives/hover-highligh.directive';
+import { HoverHighlightDirective } from './directives/hover-highligh.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { HoverHighlighDirective } from './directives/hover-highligh.directive';
     DiPlaygroundComponent,
     HighlightDirective,
     CustomAttributeDirectiveComponent,
-    HoverHighlighDirective,
+    HoverHighlightDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

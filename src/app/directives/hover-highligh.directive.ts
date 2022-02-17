@@ -1,9 +1,9 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appHoverHighligh]',
+  selector: '[appHoverHighlight]',
 })
-export class HoverHighlighDirective {
+export class HoverHighlightDirective {
   constructor(private el: ElementRef) {}
 
   @HostListener('mouseenter') onMouseEnter() {

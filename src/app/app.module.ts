@@ -14,6 +14,8 @@ import { DiPlaygroundComponent } from './components/di-playground/di-playground.
 import { HighlightDirective } from './directives/highlight.directive';
 import { CustomAttributeDirectiveComponent } from './components/custom-attribute-directive/custom-attribute-directive.component';
 import { HoverHighlightDirective } from './directives/hover-highligh.directive';
+import { InputDirectiveDirective } from './directives/input-directive.directive';
+import { InputAttributeDirectiveComponent } from './components/input-attribute-directive/input-attribute-directive.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { HoverHighlightDirective } from './directives/hover-highligh.directive';
     HighlightDirective,
     CustomAttributeDirectiveComponent,
     HoverHighlightDirective,
+    InputDirectiveDirective,
+    InputAttributeDirectiveComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

@@ -1,0 +1,9 @@
+<div ngClass="text-3xl" *ngIf="hero" class="name">{{hero.name}}</div>
+
+<br />
+
+
+<!-- Equal to -->
+<ng-template [ngIf]="hero">
+  <div class="text-3xl">{{hero.name}}</div>
+</ng-template>

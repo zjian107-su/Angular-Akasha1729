@@ -16,6 +16,7 @@ import { CustomAttributeDirectiveComponent } from './components/custom-attribute
 import { HoverHighlightDirective } from './directives/hover-highligh.directive';
 import { InputDirectiveDirective } from './directives/input-directive.directive';
 import { InputAttributeDirectiveComponent } from './components/input-attribute-directive/input-attribute-directive.component';
+import { StructuralDirectiveComponent } from './components/structural-directive/structural-directive.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { InputAttributeDirectiveComponent } from './components/input-attribute-d
     HoverHighlightDirective,
     InputDirectiveDirective,
     InputAttributeDirectiveComponent,
+    StructuralDirectiveComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

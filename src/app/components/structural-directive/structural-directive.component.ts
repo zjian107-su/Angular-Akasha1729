@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class StructuralDirectiveComponent {
   hero = { name: 'Magneta', age: 25 };
+  condition = false;
 }

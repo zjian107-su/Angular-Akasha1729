@@ -1,3 +1,4 @@
+<!-- part one -->
 <div ngClass="text-3xl" *ngIf="hero" class="name">{{hero.name}}</div>
 
 <br />
@@ -7,3 +8,21 @@
 <ng-template [ngIf]="hero">
   <div class="text-3xl">{{hero.name}}</div>
 </ng-template>
+<!-- part two -->
+<p>
+  The condition is currently
+  <span class="text-3xl">{{condition}}</span>.
+  <button class="btn btn-primary" type="button" (click)="condition = !condition">
+    Toggle condition to {{condition ? 'false' : 'true'}}
+  </button>
+</p>
+
+
+<p *appStructuralUnless="condition">
+  (A) This paragraph is displayed because the condition is false.
+</p>
+
+<p *appStructuralUnless="!condition">
+  (B) Although the condition is true,
+  this paragraph is displayed because appUnless is set to false.
+</p>

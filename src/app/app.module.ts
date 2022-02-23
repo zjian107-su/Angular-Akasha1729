@@ -17,6 +17,8 @@ import { HoverHighlightDirective } from './directives/hover-highligh.directive';
 import { InputDirectiveDirective } from './directives/input-directive.directive';
 import { InputAttributeDirectiveComponent } from './components/input-attribute-directive/input-attribute-directive.component';
 import { StructuralDirectiveComponent } from './components/structural-directive/structural-directive.component';
+import { StructuralUnlessDirective } from './directives/structural-unless.directive';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { StructuralDirectiveComponent } from './components/structural-directive/
     InputDirectiveDirective,
     InputAttributeDirectiveComponent,
     StructuralDirectiveComponent,
+    StructuralUnlessDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

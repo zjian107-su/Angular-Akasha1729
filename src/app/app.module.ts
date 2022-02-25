@@ -18,7 +18,7 @@ import { InputDirectiveDirective } from './directives/input-directive.directive'
 import { InputAttributeDirectiveComponent } from './components/input-attribute-directive/input-attribute-directive.component';
 import { StructuralDirectiveComponent } from './components/structural-directive/structural-directive.component';
 import { StructuralUnlessDirective } from './directives/structural-unless.directive';
-
+import { BrainstormVoteComponent } from './components/brainstorm-vote/brainstorm-vote.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +37,7 @@ import { StructuralUnlessDirective } from './directives/structural-unless.direct
     InputAttributeDirectiveComponent,
     StructuralDirectiveComponent,
     StructuralUnlessDirective,
+    BrainstormVoteComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

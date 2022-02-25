@@ -20,3 +20,5 @@
 9. Custom attribute directive with input to make an element change color based on the radio button value. Component name `input-attribute-directive`
 
 10. Custom structural directive that implement as the opposite of "*NgIf". Component name `structural-directive` and directive name `structural-unless`
+
+11. Brainstorm Voting System: The highest vote will get highlighted as yellow all time, and you can upvote and downvote. Component name `brainstorm-vote`

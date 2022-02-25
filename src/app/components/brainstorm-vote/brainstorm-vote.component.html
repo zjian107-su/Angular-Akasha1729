@@ -1,0 +1,17 @@
+<h1>Daniel's Brainstorm Vote System</h1>
+
+<div *ngFor="let item of comments">
+  <div class="flex flex-col card w-96 bg-primary text-primary-content mb-3"
+    [ngClass]="{'bg-yellow-500 text-black': isHighestID(item.id)}">
+    <div ngClass="card-body">
+      <h2 ngClass="text-2xl card-title"> ID: {{item.id}}, Text: {{item.text}}, Votes: {{item.votes}} </h2>
+      <br />
+      <div class="card-actions flex flex-row justify-between">
+        <button class="btn btn-accent" (click)="upVote(item.id)">Upvote</button>
+        <button class="btn btn-accent" (click)="downVote(item.id)">Downvote</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div>

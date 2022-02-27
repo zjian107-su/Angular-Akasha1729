@@ -22,3 +22,5 @@
 10. Custom structural directive that implement as the opposite of "*NgIf". Component name `structural-directive` and directive name `structural-unless`
 
 11. Brainstorm Voting System: The highest vote will get highlighted as yellow all time, and you can upvote and downvote. Component name `brainstorm-vote`
+
+12. Pagination: Show 10 items per page, and you can go to next page or previous page. Component name `pagination`

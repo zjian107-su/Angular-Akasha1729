@@ -1,20 +1,22 @@
-<h1> Daniel's Pagination </h1>
+<div class="flex flex-col ml-3">
+  <h1> Daniel's Pagination </h1>
+  <br />
 
-<!-- 
-<div style="display: flex; flex-direction: column; align-items: center">
-  <input [(ngModel)]="queryString" (input)="changeHandler()" />
-  <div>
-    <div *ngFor="let one of list"
-      style="border: 1px black solid; margin: 10px; display: flex; flex-direction: column; align-items: center">
-      <div>Title: {{ one.title }}</div>
-      <div>Authors: </div>
-      <span *ngFor="let author of one.authors">{{ author }}</span>
+<!-- info data -->
+<div *ngFor="let item of currentData">
+  <div class="card card-compact w-96 bg-base-100 shadow-xl mb-2">
+    <div class="card-body">
+      <h2 class="card-title">{{item.title}}</h2>
+      <p>{{item.authors}}</p>
     </div>
   </div>
-  <div style="display: flex">
-    <div *ngFor="let page of pageList" (click)="clickHandler(page)"
-      style="border: 1px black solid; height: 20px; width: 20px; display: flex; justify-content: center">
-      {{ page }}
-    </div>
+</div>
+<!-- Pagination -->
+<div class="join">
+  <div *ngFor="let page of pageList" (click)="clickPage(page)">
+    <button class="join-item btn btn-primary" [ngClass]="{'btn-secondary':isCurrentPage(page)}">{{ page
+      }}</button>
   </div>
-</div> -->
+</div>
+
+</div>

@@ -2,6 +2,10 @@
   <h1> Daniel's Pagination </h1>
   <br />
 
+<input type="text" [(ngModel)]="filterQueryString" class="input input-bordered input-primary w-full max-w-xs" />
+<h2>Search query is: {{filterQueryString}}</h2>
+<button class="btn btn-primary w-32" (click)="onFilter(filterQueryString)"> Search </button>
+
 <!-- info data -->
 <div *ngFor="let item of currentData">
   <div class="card card-compact w-96 bg-base-100 shadow-xl mb-2">
@@ -17,6 +21,4 @@
     <button class="join-item btn btn-primary" [ngClass]="{'btn-secondary':isCurrentPage(page)}">{{ page
       }}</button>
   </div>
-</div>
-
 </div>

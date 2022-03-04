@@ -12,7 +12,7 @@ export class PaginationComponent implements OnInit {
   data: Book[] = data;
   currentData: Book[] = [];
   page: number = 1;
-  PAGESIZE: number = 10;
+  PAGESIZE: number = 5;
   pageList: number[] = [];
   filterQueryString: string = 'The';
 
@@ -44,5 +44,10 @@ export class PaginationComponent implements OnInit {
     });
     this.page = 1;
     this.getBookDetails(newData);
+  }
+
+  onChangePageSize(newSize: number) {
+    this.PAGESIZE = newSize;
+    this.getBookDetails(this.data);
   }
 }

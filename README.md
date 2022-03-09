@@ -41,4 +41,4 @@
 
 20. fetch use HttpClient to show a list of users from 'https://jsonplaceholder.typicode.com/users'. Component name `fetch-user` //TODO
 
-21. Other Exercise Collections, questions found from other sources. //TODO
+21. rxjs Observables. Undocumented, quick prep for interviews. Behavior of observables and subscribers. // TODO: undocumented

@@ -20,6 +20,7 @@ import { StructuralDirectiveComponent } from './components/structural-directive/
 import { StructuralUnlessDirective } from './directives/structural-unless.directive';
 import { BrainstormVoteComponent } from './components/brainstorm-vote/brainstorm-vote.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { RxjsObservableSubscriberComponent } from './components/rxjs-observable-subscriber/rxjs-observable-subscriber.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     StructuralUnlessDirective,
     BrainstormVoteComponent,
     PaginationComponent,
+    RxjsObservableSubscriberComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

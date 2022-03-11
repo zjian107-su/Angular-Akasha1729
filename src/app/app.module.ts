@@ -23,6 +23,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { RxjsObservableSubscriberComponent } from './components/rxjs-observable-subscriber/rxjs-observable-subscriber.component';
 import { RxjsCounterComponent } from './components/rxjs-counter/rxjs-counter.component';
 import { RxjsPipeOperatorsComponent } from './components/rxjs-pipe-operators/rxjs-pipe-operators.component';
+import { PlansComponent } from './components/plans/plans.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { RxjsPipeOperatorsComponent } from './components/rxjs-pipe-operators/rxj
     RxjsObservableSubscriberComponent,
     RxjsCounterComponent,
     RxjsPipeOperatorsComponent,
+    PlansComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

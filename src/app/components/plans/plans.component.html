@@ -1,0 +1,8 @@
+<p>plans works!</p>
+
+
+<div *ngFor="let item of plans, let i = index" class="horizontal">
+  <div class="item">
+    <button class="btn btn-primary" (click)="onClick(item, i)">{{item.id}}</button>
+  </div>
+</div>

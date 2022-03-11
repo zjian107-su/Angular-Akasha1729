@@ -1,0 +1,7 @@
+.horizontal {
+  display: flex
+}
+
+.item {
+  width: 64px;
+}

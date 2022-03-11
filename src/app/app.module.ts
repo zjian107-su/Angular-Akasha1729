@@ -22,6 +22,7 @@ import { BrainstormVoteComponent } from './components/brainstorm-vote/brainstorm
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { RxjsObservableSubscriberComponent } from './components/rxjs-observable-subscriber/rxjs-observable-subscriber.component';
 import { RxjsCounterComponent } from './components/rxjs-counter/rxjs-counter.component';
+import { RxjsPipeOperatorsComponent } from './components/rxjs-pipe-operators/rxjs-pipe-operators.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { RxjsCounterComponent } from './components/rxjs-counter/rxjs-counter.com
     PaginationComponent,
     RxjsObservableSubscriberComponent,
     RxjsCounterComponent,
+    RxjsPipeOperatorsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

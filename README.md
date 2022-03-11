@@ -33,7 +33,7 @@
 
 16. Process bar with 3 buttons: start, pause and reset. Component name `process-bar`. The process bar will increase its length to indicate the process. It also loops infinitely. //TODO
 
-17. rxjs: Implement a simple counter with rxjs. Component name `rxjs-counter`. //TODO
+17. rxjs: Implement a simple counter with rxjs. Component name `rxjs-counter`.
 
 18. rxjs: use "of" to load data, use timer to pipe the data so it can debounce. Eventually, console log the last value in the example. The example could be ['WAIT', 'ONE', 'SECOND', 'Last will display']. Component name `rxjs-debounce` //TODO
 

@@ -1,10 +1,11 @@
+<div class="bg-purple-300">
 <h1 class="mb-4"> Daniel's Pagination </h1>
 
 <div class="flex flex-col ml-3 w-80">
   <input type="text" [(ngModel)]="filterQueryString" class="input input-bordered input-primary w-full max-w-xs" />
   <h2>Search query is: {{filterQueryString}}</h2>
   <h2>Page size is: {{PAGESIZE}}</h2>
-  <div class="flex flex-row justify-between">
+<div class="flex flex-row justify-between my-2">
     <button class=" btn btn-primary w-32" [ngClass]="{'btn-disabled':filterQueryString.length === 0}"
       (click)="onFilter(filterQueryString)"> Search </button>
   
@@ -17,9 +18,8 @@
           (click)="onChangePageSize(10)">10</button>
       </ul>
     </div>
-  
   </div>
-  </div>
+</div>
 
 <!-- info data -->
 <div *ngFor="let item of currentData">
@@ -31,9 +31,10 @@
   </div>
 </div>
 <!-- Pagination -->
-<div class="join">
+<div class="join mb-3">
   <div *ngFor="let page of pageList" (click)="clickPage(page)">
     <button class="join-item btn btn-primary" [ngClass]="{'btn-secondary':isCurrentPage(page)}">{{ page
       }}</button>
   </div>
+</div>
 </div>

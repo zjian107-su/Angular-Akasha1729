@@ -24,6 +24,7 @@ import { RxjsObservableSubscriberComponent } from './components/rxjs-observable-
 import { RxjsCounterComponent } from './components/rxjs-counter/rxjs-counter.component';
 import { RxjsPipeOperatorsComponent } from './components/rxjs-pipe-operators/rxjs-pipe-operators.component';
 import { PlansComponent } from './components/plans/plans.component';
+import { StringComponent } from './components/string/string.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { PlansComponent } from './components/plans/plans.component';
     RxjsCounterComponent,
     RxjsPipeOperatorsComponent,
     PlansComponent,
+    StringComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

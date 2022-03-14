@@ -1,13 +1,15 @@
-<h1> Daniel's Filtered Cities</h1>
+<div class="bg-pink-300">
+  <h1> Daniel's Filtered Cities</h1>
 
-<label for="search">Search</label>
-<br />
-<input id="search" type="text" [(ngModel)]="filterString" class="input input-bordered input-primary w-full max-w-xs" />
-<br />
-<button class="btn btn-accent" (click)="filterList()">Filter</button>
+  <label for="search">Search</label>
+  <br />
+  <input id="search" type="text" [(ngModel)]="filterString" class="input input-bordered input-primary w-full max-w-xs" />
+  <br />
+  <button class="btn btn-accent" (click)="filterList()">Filter</button>
 
-<p> Your searched query is: {{filterString}}</p>
+  <p> Your searched query is: {{filterString}}</p>
 
-<div *ngFor="let city of finalList">
-  <p> {{city}}</p>
+  <div *ngFor="let city of finalList">
+    <p> {{city}}</p>
+  </div>
 </div>

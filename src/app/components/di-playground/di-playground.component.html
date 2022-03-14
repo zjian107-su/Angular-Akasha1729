@@ -1,14 +1,16 @@
-<h1> Daniel's DI Playground </h1>
-<br />
+<div class="bg-cyan-400">
+  <h1> Daniel's DI Playground </h1>
+  <br />
 
-<h1>Name: {{this.nameChangeService.name}}</h1>
+  <h1>Name: {{this.nameChangeService.name}}</h1>
 
-<br />
-<div class="flex flex-row space-x-4">
-  <label class="text-2xl" for="newName"> Your new name </label>
-  <input class="input input-bordered input-primary w-full max-w-xs" id="newName" name="newName" type="text"
-    [(ngModel)]="tempName" />
+  <br />
+  <div class="flex flex-row space-x-4">
+    <label class="text-2xl" for="newName"> Your new name </label>
+    <input class="input input-bordered input-primary w-full max-w-xs" id="newName" name="newName" type="text"
+      [(ngModel)]="tempName" />
 
-  <button class="btn btn-accent" (click)="componentChangeName()">Change Name</button>
+    <button class="btn btn-accent" (click)="componentChangeName()">Change Name</button>
 
+  </div>
 </div>

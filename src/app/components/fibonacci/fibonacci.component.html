@@ -1,11 +1,13 @@
-<h1> Daniel's Fibonacci</h1>
+<div class="bg-pink-300">
+  <h1> Daniel's Fibonacci</h1>
 
-<h1>{{fiboItem}}</h1>
+  <h1>{{fiboItem}}</h1>
 
-<div class="flex flex-row space-x-4" *ngFor="let item of fiboList">
-  <p> {{item}} </p>
+  <div class="flex flex-row space-x-4" *ngFor="let item of fiboList">
+    <p> {{item}} </p>
+  </div>
+
+  <br />
+
+  <button class="btn btn-accent" (click)="addFibo()">add another fibo</button>
 </div>
-
-<br />
-
-<button class="btn btn-accent" (click)="addFibo()">add another fibo</button>

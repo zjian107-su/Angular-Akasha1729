@@ -1,14 +1,21 @@
+<div class="bg-indigo-300">
 <!-- part one -->
-<div ngClass="text-3xl" *ngIf="hero" class="name">{{hero.name}}</div>
+<h1>Daniel's structural directive</h1>
+<p class="text-3xl">1. With ngIf</p>
+<div ngClass="text-lg" *ngIf="hero" class="name">{{hero.name}}</div>
 
 <br />
 
 
 <!-- Equal to -->
+<p class="text-3xl">2. Without ngIf but ng-template</p>
 <ng-template [ngIf]="hero">
-  <div class="text-3xl">{{hero.name}}</div>
+  <div ngClass="text-lg">{{hero.name}}</div>
 </ng-template>
+<br />
+
 <!-- part two -->
+<p class="text-3xl">3. Structural Direcive - Unless</p>
 <p>
   The condition is currently
   <span class="text-3xl">{{condition}}</span>.
@@ -26,3 +33,4 @@
   (B) Although the condition is true,
   this paragraph is displayed because appUnless is set to false.
 </p>
+</div>

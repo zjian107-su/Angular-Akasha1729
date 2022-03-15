@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PalindromeListComponent } from './components/palindrome-list/palindrome-list.component';
 import { CityFilterComponent } from './components/city-filter/city-filter.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddToListComponent } from './components/add-to-list/add-to-list.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { CounterAutoIncrementComponent } from './components/counter-auto-increment/counter-auto-increment.component';
@@ -25,6 +25,7 @@ import { RxjsCounterComponent } from './components/rxjs-counter/rxjs-counter.com
 import { RxjsPipeOperatorsComponent } from './components/rxjs-pipe-operators/rxjs-pipe-operators.component';
 import { PlansComponent } from './components/plans/plans.component';
 import { StringComponent } from './components/string/string.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -50,8 +51,9 @@ import { StringComponent } from './components/string/string.component';
     RxjsPipeOperatorsComponent,
     PlansComponent,
     StringComponent,
+    LoginFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

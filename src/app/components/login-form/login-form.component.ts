@@ -12,18 +12,23 @@ export class LoginFormComponent {
   state: FormControl<string | null> = new FormControl('');
   country: FormControl<string | null> = new FormControl('');
 
+  signupForm: FormGroup = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl(''),
+    state: new FormControl(''),
+    country: new FormControl(''),
+  });
+
   ngOnInit() {
-    this.email.setValue('daniel@gamil.com');
-    this.password.setValue('12345');
-    this.state.setValue('CA');
-    this.country.setValue('USA');
+    this.signupForm.patchValue({
+      email: '',
+      password: '',
+      state: '',
+      country: '',
+    });
   }
 
   submit() {
-    console.log('submit');
-    console.log('email', this.email.value);
-    console.log('password', this.password.value);
-    console.log('state', this.state.value);
-    console.log('country', this.country.value);
+    console.log(this.signupForm.value);
   }
 }

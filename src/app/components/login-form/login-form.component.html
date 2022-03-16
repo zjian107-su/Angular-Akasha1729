@@ -1,33 +1,35 @@
 <h1>Daniel's login-form</h1>
 
 
-<form (submit)="submit()">
+<form [formGroup]="signupForm" (submit)="submit()">
   <label for="email" id>
     Email:
-    <input class="input input-bordered w-full max-w-xs" type="text" name="email" [formControl]="email" />
+    <input class="input input-bordered w-full max-w-xs" type="text" name="email" formControlName="email" />
   </label>
   <br />
   <label for="password">
     Password:
-    <input class="input input-bordered w-full max-w-xs" type="password" name="passowrd" [formControl]="password" />
+    <input class="input input-bordered w-full max-w-xs" type="password" name="passowrd" formControlName="password" />
   </label>
   <br />
   <label for="state">
     State:
-    <input class="input input-bordered w-full max-w-xs" type="text" name="state" [formControl]="state" />
+    <input class="input input-bordered w-full max-w-xs" type="text" name="state" formControlName="state" />
   </label>
   <br />
   <label for="contry">
     Contry:
-    <input class="input input-bordered w-full max-w-xs" type="contry" name="passowrd" [formControl]="country" />
+    <input class="input input-bordered w-full max-w-xs" type="contry" name="passowrd" formControlName="country" />
   </label>
   <br />
 
   <button class="btn btn-primary" type="submit">Click to submit</button>
 
-  <p>email: {{email.value}}</p>
+  <!-- <p>email: {{email.value}}</p>
   <p>password: {{password.value}}</p>
   <p>state: {{state.value}}</p>
-  <p>country: {{country.value}}</p>
+  <p>country: {{country.value}}</p> -->
 
+
+  <span>{{signupForm.value | json}}</span>
 </form>

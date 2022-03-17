@@ -12,11 +12,13 @@ export class LoginFormComponent {
   state: FormControl<string | null> = new FormControl('');
   country: FormControl<string | null> = new FormControl('');
 
-  signupForm: FormGroup = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl(''),
-    state: new FormControl(''),
-    country: new FormControl(''),
+  constructor(private fb: FormBuilder) {}
+
+  signupForm: FormGroup = this.fb.group({
+    email: [],
+    password: [],
+    state: [],
+    country: [],
   });
 
   ngOnInit() {

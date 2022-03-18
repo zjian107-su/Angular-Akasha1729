@@ -12,16 +12,18 @@
     <input class="input input-bordered w-full max-w-xs" type="password" name="passowrd" formControlName="password" />
   </label>
   <br />
-  <label for="state">
-    State:
-    <input class="input input-bordered w-full max-w-xs" type="text" name="state" formControlName="state" />
-  </label>
-  <br />
-  <label for="contry">
-    Contry:
-    <input class="input input-bordered w-full max-w-xs" type="contry" name="passowrd" formControlName="country" />
-  </label>
-  <br />
+<div formGroupName="address">
+    <label for="state">
+      State:
+      <input class="input input-bordered w-full max-w-xs" type="text" name="state" formControlName="state" />
+    </label>
+    <br />
+    <label for="country">
+      Country:
+      <input class="input input-bordered w-full max-w-xs" type="text" name="country" formControlName="country" />
+    </label>
+    <br />
+  </div>
 
   <button class="btn btn-primary" type="submit">Click to submit</button>
 

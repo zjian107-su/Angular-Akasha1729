@@ -17,8 +17,7 @@ export class LoginFormComponent {
   signupForm: FormGroup = this.fb.group({
     email: [],
     password: [],
-    state: [],
-    country: [],
+    address: this.fb.group({ state: [], country: [] }),
   });
 
   ngOnInit() {

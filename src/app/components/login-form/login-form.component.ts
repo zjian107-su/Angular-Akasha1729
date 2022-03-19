@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  FormBuilder,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-login-form',
@@ -15,19 +20,12 @@ export class LoginFormComponent {
   constructor(private fb: FormBuilder) {}
 
   signupForm: FormGroup = this.fb.group({
-    email: [],
-    password: [],
-    address: this.fb.group({ state: [], country: [] }),
+    email: [''],
+    password: ['password'],
+    address: this.fb.group({ state: ['NY'], country: ['USA'] }),
   });
 
-  ngOnInit() {
-    this.signupForm.patchValue({
-      email: '',
-      password: '',
-      state: '',
-      country: '',
-    });
-  }
+  ngOnInit() {}
 
   submit() {
     console.log(this.signupForm.value);

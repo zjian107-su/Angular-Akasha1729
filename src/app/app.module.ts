@@ -26,6 +26,7 @@ import { RxjsPipeOperatorsComponent } from './components/rxjs-pipe-operators/rxj
 import { PlansComponent } from './components/plans/plans.component';
 import { StringComponent } from './components/string/string.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
+import { TrafficLightComponent } from './components/traffic-light/traffic-light.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { LoginFormComponent } from './components/login-form/login-form.component
     PlansComponent,
     StringComponent,
     LoginFormComponent,
+    TrafficLightComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

@@ -25,7 +25,7 @@
 
 12. Pagination: Show 10 items per page, and you can go to next page or previous page. Component name `pagination`. You can filter by book title and set the default page size for the pagination. 
 
-13. Login form with email validation and password validation. Email needs to be input twice. Password needs to be input twice. Component name `login-form`. At the end you can submit it.  //TODO
+13. Login form with email validation and password validation. Email needs to be input twice. Password needs to be input twice. Component name `login-form`. At the end you can submit it.
 
 14. Traffic light: Implement a traffic light with 3 colors. Component name `traffic-light`. There is a stop and resume toggle button. There are 3 lights, and they rotate by time.//TODO
 

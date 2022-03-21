@@ -1,0 +1,28 @@
+.container {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.trafficLight {
+  width: 80%;
+  height: 80%;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.green {
+  background-color: green; 
+}
+
+.yellow {
+  background-color: yellow; 
+}
+
+.red {
+  background-color: red
+}

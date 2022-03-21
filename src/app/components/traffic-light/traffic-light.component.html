@@ -1,0 +1,21 @@
+<div class="bg-pink-600">
+  <h1>Daniel's Traffic light</h1>
+
+  <div class="container">
+    <div class="trafficLight" [ngClass]="activate===0? 'green': ''">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="trafficLight" [ngClass]="activate===1? 'yellow': ''">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="trafficLight" [ngClass]="activate===2? 'red': ''">
+    </div>
+  </div>
+
+  <button class="btn btn-primary" (click)="resumeTimer()">Resume</button>
+  <button class="btn btn-secondary" (click)="stopTimer()">Stop</button>
+</div>

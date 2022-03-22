@@ -1,0 +1,42 @@
+<div class="bg-teal-400">
+  <h1>Daniel's calculator</h1>
+
+  <div class="digital">
+    <p>Digital Area</p>
+    <div class="flex justify-content">
+      <div *ngFor="let item of digits">
+        <button class="btn btn-info" (click)="addToExpression(item)"> {{item}}</button>
+      </div>
+      <div class="flex justify-content"></div>
+    </div>
+
+    <div class="operator">
+      <p>Operator Area</p>
+      <div class="flex justify-content">
+        <div *ngFor="let item of operators">
+          <button class="btn btn-success" (click)="addToExpression(item)"> {{item}}</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="special">
+      <p>Special Area</p>
+      <div class="flex justify-content">
+        <button class="btn btn-primary" (click)="clean()">
+          {{'C'}}
+        </button>
+        <button class="btn btn-primary" (click)="back()">
+          {{'Back'}} </button>
+        <button class="btn btn-primary" (click)="getResult()">
+          {{'='}}
+        </button>
+      </div>
+    </div>
+
+
+    <h2>Displa Area....</h2>
+    <h2>Your input is: {{currentExpression}}</h2>
+    <h2 *ngIf="res != undefined">Your result is: {{currentExpression}}</h2>
+
+
+  </div>

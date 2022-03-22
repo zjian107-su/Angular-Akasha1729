@@ -27,7 +27,7 @@
 
 13. Login form with email validation and password validation. Email needs to be input twice. Password needs to be input twice. Component name `login-form`. At the end you can submit it.
 
-14. Traffic light: Implement a traffic light with 3 colors. Component name `traffic-light`. There is a stop and resume toggle button. There are 3 lights, and they rotate by time.//TODO
+14. Traffic light: Implement a traffic light with 3 colors. Component name `traffic-light`. There is a stop and resume toggle button. There are 3 lights, and they rotate by time.
 
 15. Implement a simple calculator. There are 10 digital buttons and you can do addition, reduction and equal. Component name `calculator`. //TODO
 

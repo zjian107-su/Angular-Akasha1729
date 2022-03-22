@@ -1,0 +1,12 @@
+.digital {
+  background-color: pink;
+  padding-bottom: 15px;
+}
+.operator {
+  background-color: green;
+  padding-bottom: 15px;
+}
+.special {
+  background-color: yellow;
+  padding-bottom: 15px;
+}

@@ -1,0 +1,9 @@
+.bar {
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: pink
+}
+
+.halfLength {
+  width: 50%;
+}

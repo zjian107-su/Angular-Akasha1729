@@ -28,6 +28,7 @@ import { StringComponent } from './components/string/string.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { TrafficLightComponent } from './components/traffic-light/traffic-light.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { ProcessBarComponent } from './components/process-bar/process-bar.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
     LoginFormComponent,
     TrafficLightComponent,
     CalculatorComponent,
+    ProcessBarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

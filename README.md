@@ -29,7 +29,7 @@
 
 14. Traffic light: Implement a traffic light with 3 colors. Component name `traffic-light`. There is a stop and resume toggle button. There are 3 lights, and they rotate by time.
 
-15. Implement a simple calculator. There are 10 digital buttons and you can do addition, reduction and equal. Component name `calculator`. //TODO
+15. Implement a simple calculator. There are 10 digital buttons and you can do addition, reduction and equal. Component name `calculator`.
 
 16. Process bar with 3 buttons: start, pause and reset. Component name `process-bar`. The process bar will increase its length to indicate the process. It also loops infinitely. //TODO
 

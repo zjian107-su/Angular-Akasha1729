@@ -31,7 +31,7 @@
 
 15. Implement a simple calculator. There are 10 digital buttons and you can do addition, reduction and equal. Component name `calculator`.
 
-16. Process bar with 3 buttons: start, pause and reset. Component name `process-bar`. The process bar will increase its length to indicate the process. It also loops infinitely. //TODO
+16. Process bar with 3 buttons: start, pause and reset. Component name `process-bar`. The process bar will increase its length to indicate the process. It also loops infinitely.
 
 17. rxjs: Implement a simple counter with rxjs. Component name `rxjs-counter`.
 
@@ -42,6 +42,8 @@
 20. fetch use HttpClient to show a list of users from 'https://jsonplaceholder.typicode.com/users'. Component name `fetch-user` //TODO
 
 21. rxjs Observables. Undocumented, quick prep for interviews. Behavior of observables and subscribers. // TODO: undocumented
+
+22: fetch with HttpClient
 
 
 

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PalindromeListComponent } from './components/palindrome-list/palindrome-list.component';
 import { CityFilterComponent } from './components/city-filter/city-filter.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AddToListComponent } from './components/add-to-list/add-to-list.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { CounterAutoIncrementComponent } from './components/counter-auto-increment/counter-auto-increment.component';
@@ -29,6 +30,7 @@ import { LoginFormComponent } from './components/login-form/login-form.component
 import { TrafficLightComponent } from './components/traffic-light/traffic-light.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { ProcessBarComponent } from './components/process-bar/process-bar.component';
+import { HttpClientComponent } from './components/http-client/http-client.component';
 
 @NgModule({
   declarations: [
@@ -58,8 +60,15 @@ import { ProcessBarComponent } from './components/process-bar/process-bar.compon
     TrafficLightComponent,
     CalculatorComponent,
     ProcessBarComponent,
+    HttpClientComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 
+/* Potential Inprovement
+1. pramid, with strict shape with DOM manipulation, and without DOM manipulation
+*/
+
 @Component({
   selector: 'app-string',
   templateUrl: './string.component.html',

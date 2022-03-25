@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 
+/*
+TODO: 1. back speed twice faster
+*/
+
 @Component({
   selector: 'app-process-bar',
   templateUrl: './process-bar.component.html',

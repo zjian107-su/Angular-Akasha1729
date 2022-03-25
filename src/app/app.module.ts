@@ -31,6 +31,7 @@ import { TrafficLightComponent } from './components/traffic-light/traffic-light.
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { ProcessBarComponent } from './components/process-bar/process-bar.component';
 import { HttpClientComponent } from './components/http-client/http-client.component';
+import { PracticeTriangleComponent } from './components/practice-triangle/practice-triangle.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { HttpClientComponent } from './components/http-client/http-client.compon
     CalculatorComponent,
     ProcessBarComponent,
     HttpClientComponent,
+    PracticeTriangleComponent,
   ],
   imports: [
     BrowserModule,

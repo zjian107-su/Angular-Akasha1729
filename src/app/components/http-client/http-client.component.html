@@ -1,4 +1,8 @@
 <div class="bg-rose-200">
+  <label>Search in title and body:</label>
+  <input type="text" class="input input-border bg-teal-300" [(ngModel)]="filterString" />
+  <button class="btn btn-info" (click)="search(this.filterString)">Search</button>
+  <br />
   <table>
     <thead>
       <tr>
@@ -9,12 +13,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of displayedPosts">
+      <tr *ngFor="let item of searchedPosts">
         <td>{{ item.userId }}</td>
         <td>{{ item.id }}</td>
         <td>{{ item.title }}</td>
         <td>{{ item.body }}</td>
       </tr>
+    
     </tbody>
   </table>
 

@@ -18,6 +18,9 @@ export class HttpClientComponent implements OnInit {
   constructor(private http: HttpClient) {}
   posts: Post[] = [];
   displayedPosts: Post[] = [];
+  searchedPosts: Post[] = [];
+
+  filterString = '';
 
   ngOnInit() {
     this.http
@@ -25,7 +28,18 @@ export class HttpClientComponent implements OnInit {
       .subscribe((data) => {
         this.posts = data;
         this.displayedPosts = this.posts.slice(0, 10);
+        this.searchedPosts = this.displayedPosts;
         console.log(this.posts);
       });
+  }
+
+  search(filterString: string) {
+    if (this.searchedPosts.length != 0) this.searchedPosts = [];
+    this.searchedPosts = this.displayedPosts.filter((post) => {
+      return (
+        post.title.includes(filterString) || post.body.includes(filterString)
+      );
+    });
+    this.filterString = '';
   }
 }

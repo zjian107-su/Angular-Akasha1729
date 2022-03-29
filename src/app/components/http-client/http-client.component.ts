@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { FormControl } from '@angular/forms';
+import { debounceTime, distinctUntilChanged } from 'rxjs';
 
 interface Post {
   userId: number;
@@ -20,7 +22,7 @@ export class HttpClientComponent implements OnInit {
   displayedPosts: Post[] = [];
   searchedPosts: Post[] = [];
 
-  filterString = '';
+  filterString: FormControl = new FormControl();
 
   ngOnInit() {
     this.http
@@ -31,6 +33,14 @@ export class HttpClientComponent implements OnInit {
         this.searchedPosts = this.displayedPosts;
         console.log(this.posts);
       });
+
+    this.filterString.valueChanges
+      .pipe(debounceTime(500), distinctUntilChanged())
+      .subscribe((newFilterString) => {
+        console.log('valueChanges!');
+        console.log(newFilterString);
+        this.search(newFilterString);
+      });
   }
 
   search(filterString: string) {
@@ -40,6 +50,5 @@ export class HttpClientComponent implements OnInit {
         post.title.includes(filterString) || post.body.includes(filterString)
       );
     });
-    this.filterString = '';
   }
 }

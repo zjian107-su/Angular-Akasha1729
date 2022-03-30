@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl } from '@angular/forms';
-import { debounceTime, distinctUntilChanged } from 'rxjs';
+import { Observable, debounceTime, distinctUntilChanged, of } from 'rxjs';
 
 interface Post {
   userId: number;
@@ -24,15 +24,10 @@ export class HttpClientComponent implements OnInit {
 
   filterString: FormControl = new FormControl();
 
+  postsObservable: Observable<Post[]> = of([]);
+
   ngOnInit() {
-    this.http
-      .get<Post[]>('https://jsonplaceholder.typicode.com/posts')
-      .subscribe((data) => {
-        this.posts = data;
-        this.displayedPosts = this.posts.slice(0, 10);
-        this.searchedPosts = this.displayedPosts;
-        console.log(this.posts);
-      });
+    this.getPosts();
 
     this.filterString.valueChanges
       .pipe(debounceTime(500), distinctUntilChanged())
@@ -43,12 +38,29 @@ export class HttpClientComponent implements OnInit {
       });
   }
 
-  search(filterString: string) {
+  search(filterString: string): void {
     if (this.searchedPosts.length != 0) this.searchedPosts = [];
     this.searchedPosts = this.displayedPosts.filter((post) => {
       return (
         post.title.includes(filterString) || post.body.includes(filterString)
       );
     });
+  }
+
+  getPosts(): void {
+    this.postsObservable = this.http.get<Post[]>(
+      'https://jsonplaceholder.typicode.com/posts'
+    );
+
+    console.log('getPosts()', this.postsObservable);
+
+    this.http
+      .get<Post[]>('https://jsonplaceholder.typicode.com/posts')
+      .subscribe((data) => {
+        this.posts = data;
+        this.displayedPosts = this.posts.slice(0, 10);
+        this.searchedPosts = this.displayedPosts;
+        // console.log(this.posts);
+      });
   }
 }

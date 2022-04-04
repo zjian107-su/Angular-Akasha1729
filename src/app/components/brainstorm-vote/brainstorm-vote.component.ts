@@ -19,11 +19,9 @@ export class BrainstormVoteComponent implements OnInit {
 
   ngOnInit() {
     this.highetsVoteID = this.getIDWithHighestVotes(this.comments);
-    console.log(this.highetsVoteID);
   }
 
   upVote(comment_id: number): void {
-    console.log('upvote');
     for (let comment of this.comments) {
       if (comment.id === comment_id) {
         comment.votes++;
@@ -34,7 +32,6 @@ export class BrainstormVoteComponent implements OnInit {
   }
 
   downVote(comment_id: number): void {
-    console.log('downvote');
     for (let comment of this.comments) {
       if (comment.id === comment_id) {
         comment.votes--;

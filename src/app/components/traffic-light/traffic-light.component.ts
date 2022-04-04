@@ -33,7 +33,7 @@ export class TrafficLightComponent implements OnInit, OnDestroy {
   run() {
     this.timer = setInterval(() => {
       this.activate = (this.activate + 1) % 3;
-      console.log(this.activate);
+      // console.log(this.activate);
     }, 2000);
   }
 }

@@ -32,6 +32,7 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
 import { ProcessBarComponent } from './components/process-bar/process-bar.component';
 import { HttpClientComponent } from './components/http-client/http-client.component';
 import { PracticeTriangleComponent } from './components/practice-triangle/practice-triangle.component';
+import { NestedNavComponent } from './components/nested-nav/nested-nav.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { PracticeTriangleComponent } from './components/practice-triangle/practi
     ProcessBarComponent,
     HttpClientComponent,
     PracticeTriangleComponent,
+    NestedNavComponent,
   ],
   imports: [
     BrowserModule,

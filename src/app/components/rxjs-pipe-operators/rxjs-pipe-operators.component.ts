@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { of } from 'rxjs';
-import { map, filter } from 'rxjs/operators';
+import { map, filter, toArray } from 'rxjs/operators';
 
 @Component({
   selector: 'app-rxjs-pipe-operators',
@@ -9,6 +9,7 @@ import { map, filter } from 'rxjs/operators';
 })
 export class RxjsPipeOperatorsComponent implements OnInit {
   numbers$ = of(1, 2, 3, 4, 5);
+  processedNumbers: number[] = [];
 
   constructor() {}
 
@@ -16,8 +17,9 @@ export class RxjsPipeOperatorsComponent implements OnInit {
     this.numbers$
       .pipe(
         filter((val) => val % 2 === 0),
-        map((val) => val * 2)
+        map((val) => val * 2),
+        toArray()
       )
-      .subscribe((val) => console.log(val));
+      .subscribe((val) => (this.processedNumbers = val));
   }
 }

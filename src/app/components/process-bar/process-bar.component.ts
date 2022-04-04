@@ -14,26 +14,21 @@ export class ProcessBarComponent {
   timer: any;
 
   run() {
-    console.log('run');
     this.timer = setInterval(() => {
       this.width = (this.width + 10) % 110;
-      console.log(this.width);
     }, 1000);
   }
 
   ngOnInit() {
-    console.log('init');
     this.run();
   }
 
   ngOnDestroy() {
-    console.log('destroy');
     clearInterval(this.timer);
     this.timer = undefined;
   }
 
   toggle() {
-    console.log('toggle');
     if (this.timer == undefined) {
       this.run();
     } else if (this.timer != undefined) {

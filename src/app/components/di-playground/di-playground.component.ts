@@ -11,7 +11,6 @@ export class DiPlaygroundComponent {
   tempName: string = '';
 
   ngOnInit(): void {
-    console.log('init Daniel');
     this.nameChangeService.print();
   }
 

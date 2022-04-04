@@ -11,7 +11,6 @@ export class CounterAutoIncrementComponent {
   isRunning: boolean = true;
 
   ngOnInit(): void {
-    console.log('Init');
     this.startTimer();
   }
 
@@ -21,14 +20,12 @@ export class CounterAutoIncrementComponent {
   }
 
   startTimer(): void {
-    console.log('Start Timer');
     this.timerID = setInterval(() => {
       this.count++;
     }, 1000) as unknown as number;
   }
 
   stopTimer(): void {
-    console.log('Stop Timer');
     if (this.timerID !== undefined) {
       clearInterval(this.timerID);
       this.timerID = undefined; // this is important to help prevent bug later

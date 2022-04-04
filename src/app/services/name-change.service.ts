@@ -9,7 +9,7 @@ export class NameChangeService {
   constructor() {}
 
   print(): void {
-    console.log(`your current name is ${this.name}`);
+    // console.log(`your current name is ${this.name}`);
   }
 
   changeName(name: string): void {

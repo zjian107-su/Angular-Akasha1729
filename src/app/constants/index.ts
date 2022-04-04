@@ -83,4 +83,98 @@ const data: Book[] = [
   { title: 'In Search of Lost Time', authors: ['Marcel Proust'] },
 ];
 
-export { palindromeList, cityList, data };
+
+const tab: object = {
+  navTabs: [
+    {
+      id: '1',
+      label: 'Campus',
+      link: '/campus',
+      miniTabs: [
+        {
+          id: '1.1',
+          label: 'Facilities',
+          link: '/campus/facilities',
+        },
+        {
+          id: '1.2',
+          label: 'Library',
+          link: '/campus/library',
+        },
+        {
+          id: '1.3',
+          label: 'Sports Complex',
+          link: '/campus/sports-complex',
+        },
+      ],
+    },
+    {
+      id: '2',
+      label: 'About',
+      link: '/about',
+      miniTabs: [
+        {
+          id: '2.1',
+          label: 'History',
+          link: '/about/history',
+        },
+        {
+          id: '2.2',
+          label: 'Mission & Vision',
+          link: '/about/mission-vision',
+        },
+        {
+          id: '2.3',
+          label: 'Staff Directory',
+          link: '/about/staff-directory',
+        },
+      ],
+    },
+    {
+      id: '3',
+      label: 'Admissions',
+      link: '/admissions',
+      miniTabs: [
+        {
+          id: '3.1',
+          label: 'Application Process',
+          link: '/admissions/application-process',
+        },
+        {
+          id: '3.2',
+          label: 'Tuition & Fees',
+          link: '/admissions/tuition-fees',
+        },
+        {
+          id: '3.3',
+          label: 'Scholarships',
+          link: '/admissions/scholarships',
+        },
+      ],
+    },
+    {
+      id: '4',
+      label: 'Events',
+      link: '/events',
+      miniTabs: [
+        {
+          id: '4.1',
+          label: 'Upcoming Events',
+          link: '/events/upcoming',
+        },
+        {
+          id: '4.2',
+          label: 'Annual Fest',
+          link: '/events/annual-fest',
+        },
+        {
+          id: '4.3',
+          label: 'Sports Day',
+          link: '/events/sports-day',
+        },
+      ],
+    },
+  ],
+};
+
+export { palindromeList, cityList, data, tab };

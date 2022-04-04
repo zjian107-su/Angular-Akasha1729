@@ -52,8 +52,6 @@ export class HttpClientComponent implements OnInit {
       'https://jsonplaceholder.typicode.com/posts'
     );
 
-    console.log('getPosts()', this.postsObservable);
-
     this.http
       .get<Post[]>('https://jsonplaceholder.typicode.com/posts')
       .subscribe((data) => {

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { tabs } from './constants';
+import { Tab } from './interfaces';
 
 
 @Component({
@@ -9,4 +11,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string = 'Angular-Interview-Exercises';
   devMode = true;
+  tabs: Tab[] = tabs;
 }

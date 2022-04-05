@@ -1,5 +1,9 @@
 <div class="bg-cyan-400">
-  <h1>Daniel's nested-nav</h1>
-
+  <div *ngFor="let tab of childrenTab; let i = index">
+  
+    <button class="btn btn-info" (click)="toggleActive(i)"> {{tab.label}} </button>
+    <div *ngIf="tab.children && tab.children.length > 0 && tab.isActive">
+      <app-nested-nav [childrenTab]="tab.children"></app-nested-nav>
+    </div>
 
 </div>

@@ -3,4 +3,10 @@ interface Book {
   authors: string[];
 }
 
-export { Book };
+interface Tab {
+  label: string;
+  children?: Tab[]; // for nested tabs, optional
+  isActive: boolean; // control click event and user interaction, optional
+}
+
+export { Book, Tab };

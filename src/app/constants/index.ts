@@ -1,4 +1,5 @@
 import { Book } from '../interfaces';
+import { Tab } from '../interfaces';
 
 const palindromeList: string[] = ['aba', 'abb', 'abc', 'ccc'];
 
@@ -83,98 +84,36 @@ const data: Book[] = [
   { title: 'In Search of Lost Time', authors: ['Marcel Proust'] },
 ];
 
+const tabs: Tab[] = [
+  {
+    label: 'Campuses',
+    children: [
+      { label: 'EF Academy', isActive: false },
+      { label: 'AJ Academy', isActive: false },
+    ],
+    isActive: false,
+  },
+  {
+    label: 'Activities',
+    children: [
+      {
+        label: 'Skating',
+        children: [
+          {
+            label: 'Ice Skate',
+            children: [
+              { label: 'Lake Rink', isActive: false },
+              { label: 'Artificial Rink', isActive: false },
+            ],
+            isActive: false,
+          },
+          { label: 'Roller Skate', isActive: false },
+        ],
+        isActive: false,
+      },
+    ],
+    isActive: false,
+  },
+];
 
-const tab: object = {
-  navTabs: [
-    {
-      id: '1',
-      label: 'Campus',
-      link: '/campus',
-      miniTabs: [
-        {
-          id: '1.1',
-          label: 'Facilities',
-          link: '/campus/facilities',
-        },
-        {
-          id: '1.2',
-          label: 'Library',
-          link: '/campus/library',
-        },
-        {
-          id: '1.3',
-          label: 'Sports Complex',
-          link: '/campus/sports-complex',
-        },
-      ],
-    },
-    {
-      id: '2',
-      label: 'About',
-      link: '/about',
-      miniTabs: [
-        {
-          id: '2.1',
-          label: 'History',
-          link: '/about/history',
-        },
-        {
-          id: '2.2',
-          label: 'Mission & Vision',
-          link: '/about/mission-vision',
-        },
-        {
-          id: '2.3',
-          label: 'Staff Directory',
-          link: '/about/staff-directory',
-        },
-      ],
-    },
-    {
-      id: '3',
-      label: 'Admissions',
-      link: '/admissions',
-      miniTabs: [
-        {
-          id: '3.1',
-          label: 'Application Process',
-          link: '/admissions/application-process',
-        },
-        {
-          id: '3.2',
-          label: 'Tuition & Fees',
-          link: '/admissions/tuition-fees',
-        },
-        {
-          id: '3.3',
-          label: 'Scholarships',
-          link: '/admissions/scholarships',
-        },
-      ],
-    },
-    {
-      id: '4',
-      label: 'Events',
-      link: '/events',
-      miniTabs: [
-        {
-          id: '4.1',
-          label: 'Upcoming Events',
-          link: '/events/upcoming',
-        },
-        {
-          id: '4.2',
-          label: 'Annual Fest',
-          link: '/events/annual-fest',
-        },
-        {
-          id: '4.3',
-          label: 'Sports Day',
-          link: '/events/sports-day',
-        },
-      ],
-    },
-  ],
-};
-
-export { palindromeList, cityList, data, tab };
+export { palindromeList, cityList, data, tabs };

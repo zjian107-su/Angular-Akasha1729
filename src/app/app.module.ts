@@ -33,6 +33,8 @@ import { ProcessBarComponent } from './components/process-bar/process-bar.compon
 import { HttpClientComponent } from './components/http-client/http-client.component';
 import { PracticeTriangleComponent } from './components/practice-triangle/practice-triangle.component';
 import { NestedNavComponent } from './components/nested-nav/nested-nav.component';
+import { LoadingPageComponent } from './components/loading-page/loading-page.component';
+import { InterviewFormComponent } from './components/interview-form/interview-form.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +67,8 @@ import { NestedNavComponent } from './components/nested-nav/nested-nav.component
     HttpClientComponent,
     PracticeTriangleComponent,
     NestedNavComponent,
+    LoadingPageComponent,
+    InterviewFormComponent,
   ],
   imports: [
     BrowserModule,

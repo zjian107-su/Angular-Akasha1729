@@ -1,0 +1,46 @@
+<p>interview-form works!</p>
+
+<form submit="onSubmit()">
+  <label for="firstName">First Name</label>
+  <input class="input input-bordered bg-emerald-200" type="text" name="firstName" [formControl]=firstName />
+  <br />
+
+  <label for="firstName">Last Name</label>
+  <input class="input input-bordered bg-emerald-200" type="text" name="lastName" [formControl]="lastName" />
+  <label for="email">Email</label>
+  <input class="input input-bordered bg-emerald-200" type="text" name="email" [formControl]="email" />
+  <label for="firstName">age</label>
+  <input class="input input-bordered bg-emerald-200" type="text" name="firstName" [formControl]="age" />
+  <button class="btn btn-primary" type="submit" [ngClass]="totalCheck()? '':'btn-disabled'"
+    (click)="onSubmit()">submit</button>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <td>FirstName</td>
+      <td>LastName</td>
+      <td>Email</td>
+      <td>Age</td>
+      <td>Operation</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of userList">
+      <td>
+        {{user.firstName}}
+      </td>
+      <td>
+        {{user.lastName}}
+      </td>
+      <td>
+        {{user.email}}
+      </td>
+      <td>
+        {{user.age}}
+      </td>
+      <td>
+        <button class="btn btn-info " (click)="delete(user)">Delete</button>
+      </td>
+    </tr>
+  </tbody>

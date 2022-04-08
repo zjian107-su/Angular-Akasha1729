@@ -1,55 +1,10 @@
-<!-- 08/29/2023 -->
-<!-- <app-nested-nav [childrenTab]="tabs"></app-nested-nav> -->
-
-<h1>
-  Problem 01
-</h1>
-<p>
-  TODO: YIFU
-  Problem Description
-  You're tasked with creating a simple Angular application that simulates the loading of a new page upon the click of a
-  button. The new page will have different messages to indicate its loading state. Here are the stages:
-
-  Initial State: A button that says "Load Page" is displayed.
-  First 3 seconds: Once clicked, the button should take the user to a new "page" (or change the existing view) that
-  initially displays the text "The page is loading..."
-  Next 2 seconds: After the first 3 seconds but before 5 seconds have elapsed, add the text "The page is still
-  loading..."
-  After 10 seconds: Replace the loading text with the "fake page" content, simulating that the page has finished
-  loading.
-</p>
-<h1>
-  Problem 02
-</h1>
-<p>
-  Problem Description
-  You are tasked with creating a simple Angular application that consists of a form to collect user information and a
-  display area to show the submitted information in a list format.
-
-  The form should have the following fields:
-
-  First Name (text input)
-  Last Name (text input)
-  Email (text input with email validation)
-  Age (numeric input)
-  Below the form, display a list of submitted user information cards.
-
-  Requirements:
-
-  The form should be created using Angular's Reactive Forms.
-  All form fields are required.
-  Email should be validated to ensure it's in the correct format.
-  Implement a "Submit" button that is disabled until the form is valid.
-  Once the form is submitted, clear the form and add the submitted information to the list of user cards below.
-  Each user card should have an option to delete the card from the list.
-</p>
-
-<div class="text-5xl bg-teal-200">Display Area</div>
-<!-- <app-loading-page></app-loading-page> -->
-<app-interview-form></app-interview-form>
-
-
 <div [ngClass]="devMode? 'devMode':''">
+
+  <!-- 08/29/2023 -->
+  <app-nested-nav [childrenTab]="tabs"></app-nested-nav>
+  <app-loading-page></app-loading-page>
+  <app-interview-form></app-interview-form>
+
   <!-- 08/28/2023 -->
   <app-http-client></app-http-client>
   <app-practice-triangle></app-practice-triangle>
@@ -72,8 +27,6 @@
   <app-rxjs-pipe-operators></app-rxjs-pipe-operators>
   <br />
 
-
-
   <!-- 08/24/2023 -->
   <app-custom-attribute-directive></app-custom-attribute-directive>
   <br />
@@ -86,8 +39,6 @@
   <app-pagination></app-pagination>
   <br />
 
-
-
   <!-- 08/23/2023 -->
   <app-counter></app-counter>
   <br />
@@ -97,7 +48,6 @@
   <br />
   <app-di-playground></app-di-playground>
   <br />
-
 
   <!-- before 08/23/2023 -->
   <app-palindrome-list></app-palindrome-list>

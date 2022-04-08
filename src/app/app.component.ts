@@ -10,6 +10,7 @@ import { Tab } from './interfaces';
 })
 export class AppComponent {
   title: string = 'Angular-Interview-Exercises';
-  devMode = true;
   tabs: Tab[] = tabs;
+
+  devMode = true;
 }

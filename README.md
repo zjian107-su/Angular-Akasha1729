@@ -46,7 +46,16 @@
 
 21. rxjs Observables. Undocumented, quick prep for interviews. Behavior of observables and subscribers. // TODO: undocumented
 
-22: fetch with HttpClient
+22: You have a nested object. You use it to design a nested nav bar. Only when user clicked on the tab, the child tab will show. Component name `nested-nav` 
+
+23: Problem Description You're tasked with creating a simple Angular application that simulates the loading of a new page upon the click of a button. The new page will have different messages to indicate its loading state. Here are the stages: Initial State: A button that says "Load Page" is displayed. First 3 seconds: Once clicked, the button should take the user to a new "page" (or change the existing view) that initially displays the text "The page is loading..." Next 2 seconds: After the first 3 seconds but before 5 seconds have elapsed, add the text "The page is still loading..." After 10 seconds: Replace the loading text with the "fake page" content, simulating that the page has finished loading. Component name `loading-page`, peer mock YF
+
+24. Problem Description You are tasked with creating a simple Angular application that consists of a form to collect user information and a display area to show the submitted information in a list format. The form should have the following fields: First Name (text input) Last Name (text input) Email (text input with email validation) Age (numeric input) Below the form, display a list of submitted user information cards. Requirements: The form should be created using Angular's Reactive Forms. All form fields are required. Email should be validated to ensure it's in the correct format. Implement a "Submit" button that is disabled until the form is valid. Once the form is submitted, clear the form and add the submitted information to the list of user cards below. Each user card should have an option to delete the card from the list. Component name `interview-form`, peer mock YF
+
+25. Input, output, EventEmitter. Component `input-output-eventemitter`
+
+
+
 
 
 

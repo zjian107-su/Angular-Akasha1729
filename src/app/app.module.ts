@@ -35,6 +35,8 @@ import { PracticeTriangleComponent } from './components/practice-triangle/practi
 import { NestedNavComponent } from './components/nested-nav/nested-nav.component';
 import { LoadingPageComponent } from './components/loading-page/loading-page.component';
 import { InterviewFormComponent } from './components/interview-form/interview-form.component';
+import { InputOutputEventemitterComponent } from './components/input-output-eventemitter/input-output-eventemitter.component';
+import { ChildComponent } from './components/input-output-eventemitter/child/child.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +71,8 @@ import { InterviewFormComponent } from './components/interview-form/interview-fo
     NestedNavComponent,
     LoadingPageComponent,
     InterviewFormComponent,
+    InputOutputEventemitterComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,

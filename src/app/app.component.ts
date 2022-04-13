@@ -12,5 +12,5 @@ export class AppComponent {
   title: string = 'Angular-Interview-Exercises';
   tabs: Tab[] = tabs;
 
-  devMode = true;
+  devMode = false;
 }

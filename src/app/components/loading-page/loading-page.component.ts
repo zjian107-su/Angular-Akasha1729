@@ -29,7 +29,11 @@ export class LoadingPageComponent implements OnDestroy {
 
   // button function
   onClick() {
+    // prevent multiple timer
     this.starCount = true;
+    if (this.timer) {
+      return;
+    }
     this.timer = setInterval(() => {
       this.count = this.count + 1;
       if (this.count <= 3) {

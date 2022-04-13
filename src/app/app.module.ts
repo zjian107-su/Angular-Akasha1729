@@ -37,6 +37,7 @@ import { LoadingPageComponent } from './components/loading-page/loading-page.com
 import { InterviewFormComponent } from './components/interview-form/interview-form.component';
 import { InputOutputEventemitterComponent } from './components/input-output-eventemitter/input-output-eventemitter.component';
 import { ChildComponent } from './components/input-output-eventemitter/child/child.component';
+import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { ChildComponent } from './components/input-output-eventemitter/child/chi
     InterviewFormComponent,
     InputOutputEventemitterComponent,
     ChildComponent,
+    DynamicFormComponent,
   ],
   imports: [
     BrowserModule,

@@ -38,6 +38,7 @@ import { InterviewFormComponent } from './components/interview-form/interview-fo
 import { InputOutputEventemitterComponent } from './components/input-output-eventemitter/input-output-eventemitter.component';
 import { ChildComponent } from './components/input-output-eventemitter/child/child.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
+import { HttpUserListComponent } from './components/http-user-list/http-user-list.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.com
     InputOutputEventemitterComponent,
     ChildComponent,
     DynamicFormComponent,
+    HttpUserListComponent,
   ],
   imports: [
     BrowserModule,

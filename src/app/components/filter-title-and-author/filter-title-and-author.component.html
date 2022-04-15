@@ -1,0 +1,13 @@
+<div class="bg-teal-300">
+
+  <input class="input input-bordered input-suces" [formControl]="query" (ngModelChange)="onChange()" />
+
+
+  <br />
+  <div *ngFor="let book of tempBook">
+    <h2>Title: {{book.title}}</h2>
+    <ul *ngFor="let author of book.authors">
+      <li>{{author.name}}</li>
+    </ul>
+  </div>
+</div>

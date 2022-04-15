@@ -55,3 +55,8 @@
 25. Input, output, EventEmitter. Component `input-output-eventemitter`
 
 26. Dynamically showing radio buttons based on your dropdown input. Component `dynamic-form`
+
+27. Display a list of user information fetched from an API, while creating a form to input name, email, and website, utilizing the User interface, a UserService with the HttpClient module injected, and the main component consuming the service.Component `http-user-list`
+
+
+28. List all books fetched from the API, then implement a filter function based on book title or author using the `filter-title-and-author` component. Duration 25 mins

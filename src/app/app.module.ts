@@ -39,6 +39,7 @@ import { InputOutputEventemitterComponent } from './components/input-output-even
 import { ChildComponent } from './components/input-output-eventemitter/child/child.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 import { HttpUserListComponent } from './components/http-user-list/http-user-list.component';
+import { FilterTitleAndAuthorComponent } from './components/filter-title-and-author/filter-title-and-author.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { HttpUserListComponent } from './components/http-user-list/http-user-lis
     ChildComponent,
     DynamicFormComponent,
     HttpUserListComponent,
+    FilterTitleAndAuthorComponent,
   ],
   imports: [
     BrowserModule,

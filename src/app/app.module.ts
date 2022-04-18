@@ -40,6 +40,8 @@ import { ChildComponent } from './components/input-output-eventemitter/child/chi
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 import { HttpUserListComponent } from './components/http-user-list/http-user-list.component';
 import { FilterTitleAndAuthorComponent } from './components/filter-title-and-author/filter-title-and-author.component';
+import { CardShowDetailComponent } from './components/card-show-detail/card-show-detail.component';
+import { CardShowDetailChildComponent } from './components/card-show-detail/card-show-detail-child/card-show-detail-child.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +81,8 @@ import { FilterTitleAndAuthorComponent } from './components/filter-title-and-aut
     DynamicFormComponent,
     HttpUserListComponent,
     FilterTitleAndAuthorComponent,
+    CardShowDetailComponent,
+    CardShowDetailChildComponent,
   ],
   imports: [
     BrowserModule,

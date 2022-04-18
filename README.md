@@ -60,3 +60,8 @@
 
 
 28. List all books fetched from the API, then implement a filter function based on book title or author using the `filter-title-and-author` component. Duration 25 mins
+
+## Great APIs
+1. https://openlibrary.org/subjects/world.json
+2. https://jsonplaceholder.typicode.com/users
+3. https://jsonplaceholder.typicode.com/posts

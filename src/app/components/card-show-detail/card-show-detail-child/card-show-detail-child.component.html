@@ -1,0 +1,13 @@
+<div (click)="toggle()" [ngClass]="isExpanded ? 'bg-teal-200':''">
+  <p>{{user.name}}, {{user.id}}</p>
+
+  <div *ngIf="isExpanded">
+    <div *ngFor="let post of postsDetail">
+      <p>Title: </p>
+      <p>{{post.title}}</p>
+      <p>Body: </p>
+      <p>{{post.body}}</p>
+    </div>
+  </div>
+  <br /><br /><br />
+</div>

@@ -1,0 +1,14 @@
+<div class="bg-fuchsia-300">
+  <h1>Daniel's card to show detail</h1>
+
+  <ul>
+    <li *ngFor="let user of userList">
+      <div class="div">
+
+
+        <app-card-show-detail-child [data]="postList" [user]="user"></app-card-show-detail-child>
+
+      </div>
+    </li>
+  </ul>
+</div>

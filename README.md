@@ -61,7 +61,12 @@
 
 28. List all books fetched from the API, then implement a filter function based on book title or author using the `filter-title-and-author` component. Duration 25 mins
 
+29. Two APIs. Click on user in card to get detail of his/her posts from another API. Component name: `card-show-detail`.Duration 45 mins
+
+30. One API. Get the category list, show all of them and add a header dynamically. Component name: `http-categories`. Duration 29 mins
+
 ## Great APIs
 1. https://openlibrary.org/subjects/world.json
 2. https://jsonplaceholder.typicode.com/users
 3. https://jsonplaceholder.typicode.com/posts
+4. https://api.publicapis.org/categories

@@ -1,0 +1,14 @@
+<div class="bg-teal-300">
+  <h1>Daniel's catagorization with API</h1>
+
+  <!-- {{categoryList}} -->
+  <!-- {{ dataStorage | json}} -->
+  <div *ngFor="let letterGroup of dataStorage; let i = index">
+    <div *ngIf="letterGroup && letterGroup.length != 0">
+      <h2>
+        {{getLetter(i)}}
+      </h2>
+      {{letterGroup}}
+    </div>
+  </div>
+</div>

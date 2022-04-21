@@ -42,6 +42,7 @@ import { HttpUserListComponent } from './components/http-user-list/http-user-lis
 import { FilterTitleAndAuthorComponent } from './components/filter-title-and-author/filter-title-and-author.component';
 import { CardShowDetailComponent } from './components/card-show-detail/card-show-detail.component';
 import { CardShowDetailChildComponent } from './components/card-show-detail/card-show-detail-child/card-show-detail-child.component';
+import { HttpCategoriesComponent } from './components/http-categories/http-categories.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { CardShowDetailChildComponent } from './components/card-show-detail/card
     FilterTitleAndAuthorComponent,
     CardShowDetailComponent,
     CardShowDetailChildComponent,
+    HttpCategoriesComponent,
   ],
   imports: [
     BrowserModule,

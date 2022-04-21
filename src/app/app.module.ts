@@ -43,6 +43,8 @@ import { FilterTitleAndAuthorComponent } from './components/filter-title-and-aut
 import { CardShowDetailComponent } from './components/card-show-detail/card-show-detail.component';
 import { CardShowDetailChildComponent } from './components/card-show-detail/card-show-detail-child/card-show-detail-child.component';
 import { HttpCategoriesComponent } from './components/http-categories/http-categories.component';
+import { PlaygroundChildComponent } from './components/playground/playground-child/playground-child.component';
+import { PlaygroundComponent } from './components/playground/playground.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +87,8 @@ import { HttpCategoriesComponent } from './components/http-categories/http-categ
     CardShowDetailComponent,
     CardShowDetailChildComponent,
     HttpCategoriesComponent,
+    PlaygroundComponent,
+    PlaygroundChildComponent,
   ],
   imports: [
     BrowserModule,

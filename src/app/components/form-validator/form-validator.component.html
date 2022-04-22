@@ -1,0 +1,9 @@
+<form [formGroup]="myForm">
+  <div>
+    <label for="username">Username:</label>
+    <input [ngClass]="['input', 'input-bordered', 'bg-teal-200']" type="text" id="username" formControlName="username">
+    <div *ngIf="myForm.get('username')?.hasError('forbiddenName')">
+      The name "Daniel" is not allowed.
+    </div>
+  </div>
+</form>

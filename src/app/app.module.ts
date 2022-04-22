@@ -45,6 +45,7 @@ import { CardShowDetailChildComponent } from './components/card-show-detail/card
 import { HttpCategoriesComponent } from './components/http-categories/http-categories.component';
 import { PlaygroundChildComponent } from './components/playground/playground-child/playground-child.component';
 import { PlaygroundComponent } from './components/playground/playground.component';
+import { FormValidatorComponent } from './components/form-validator/form-validator.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +90,7 @@ import { PlaygroundComponent } from './components/playground/playground.componen
     HttpCategoriesComponent,
     PlaygroundComponent,
     PlaygroundChildComponent,
+    FormValidatorComponent,
   ],
   imports: [
     BrowserModule,

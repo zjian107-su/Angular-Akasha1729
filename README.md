@@ -65,6 +65,8 @@
 
 30. One API. Get the category list, show all of them and add a header dynamically. Component name: `http-categories`. Duration 29 mins
 
+31. Custom Validator. Component name: `form-validator`.
+
 ## Great APIs
 1. https://openlibrary.org/subjects/world.json
 2. https://jsonplaceholder.typicode.com/users

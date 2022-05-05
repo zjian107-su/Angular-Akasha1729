@@ -72,3 +72,6 @@
 2. https://jsonplaceholder.typicode.com/users
 3. https://jsonplaceholder.typicode.com/posts
 4. https://api.publicapis.org/categories
+
+## Great question source
+1. https://www.codecademy.com/resources/blog/angular-code-challenges-for-beginners/

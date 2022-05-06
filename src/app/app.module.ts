@@ -46,6 +46,8 @@ import { HttpCategoriesComponent } from './components/http-categories/http-categ
 import { PlaygroundChildComponent } from './components/playground/playground-child/playground-child.component';
 import { PlaygroundComponent } from './components/playground/playground.component';
 import { FormValidatorComponent } from './components/form-validator/form-validator.component';
+import { CleanRecursiveNavComponent } from './components/clean-recursive-nav/clean-recursive-nav.component';
+import { CleanRecursiveNavChildComponent } from './components/clean-recursive-nav/clean-recursive-nav-child/clean-recursive-nav-child.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +93,8 @@ import { FormValidatorComponent } from './components/form-validator/form-validat
     PlaygroundComponent,
     PlaygroundChildComponent,
     FormValidatorComponent,
+    CleanRecursiveNavComponent,
+    CleanRecursiveNavChildComponent,
   ],
   imports: [
     BrowserModule,

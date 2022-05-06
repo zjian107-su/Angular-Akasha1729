@@ -1,0 +1,8 @@
+<dl class="space-y-4">
+  <dd class="ml-8 text-gray-600" *ngFor="let item of data">
+    <span (click)="toggleExpand(item)">{{item.children ? item.expanded ? '▼' : '▶' : '●'}}{{item.name}}</span>
+
+    <app-clean-recursive-nav-child *ngIf="item.children && item.expanded"
+      [data]="item.children"></app-clean-recursive-nav-child>
+  </dd>
+</dl>

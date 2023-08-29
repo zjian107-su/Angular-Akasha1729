@@ -1,5 +1,8 @@
 # AngularInterviewExercises
 
+[**Live Demo**](https://daniel-angular-exercise.netlify.app/)
+
+
 1. Exercise: Dynamically assign background color for div block that contains palindromic string. palindromic string - green, or else - red. **Skills**: attribute directive, string manipulation, css. Component name: `palindrome`
 
 

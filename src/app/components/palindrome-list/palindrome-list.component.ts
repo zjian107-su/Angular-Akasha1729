@@ -7,7 +7,7 @@ import { palindromeList } from '../../constants';
   styleUrls: ['./palindrome-list.component.css'],
 })
 export class PalindromeListComponent {
-  panlindomeList: string[] = palindromeList;
+  palindromeList: string[] = palindromeList;
 
   isPalindrome(str: string): boolean {
     return str === str.split('').reverse().join('');

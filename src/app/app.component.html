@@ -1,10 +1,13 @@
-<h1>✨Daniel's Angular Exercises✨</h1>
+<div class="max-w-screen-2xl mx-auto px-6 my-6 space-y-6 gap-2">
 
-<app-playground></app-playground>
+  <div [ngClass]="devMode? 'devMode':''" class="flex flex-col gap-4">
+    <h1>✨Daniel's Angular Exercises✨</h1>
 
-<app-clean-recursive-nav></app-clean-recursive-nav>
+    <app-playground></app-playground>
+    <app-clean-recursive-nav></app-clean-recursive-nav>
+  </div>
 
-<div [ngClass]="devMode? 'devMode':''">
+<div [ngClass]="devMode? 'devMode':''" class="flex flex-col gap-4">
 
   <!-- 09/06/2023 -->
   <app-form-validator></app-form-validator>
@@ -36,45 +39,29 @@
 
   <!-- interview -->
   <app-plans></app-plans>
-  <br />
   <app-string></app-string>
-  <br />
 
   <!-- 08/25/2023 -->
   <app-rxjs-observable-subscriber></app-rxjs-observable-subscriber>
-  <br />
   <app-rxjs-counter></app-rxjs-counter>
-  <br />
   <app-rxjs-pipe-operators></app-rxjs-pipe-operators>
-  <br />
 
   <!-- 08/24/2023 -->
   <app-custom-attribute-directive></app-custom-attribute-directive>
-  <br />
   <app-input-attribute-directive></app-input-attribute-directive>
-  <br />
   <app-structural-directive></app-structural-directive>
-  <br />
   <app-brainstorm-vote></app-brainstorm-vote>
-  <br />
   <app-pagination></app-pagination>
-  <br />
 
   <!-- 08/23/2023 -->
   <app-counter></app-counter>
-  <br />
   <app-counter-auto-increment></app-counter-auto-increment>
-  <br />
   <app-fibonacci></app-fibonacci>
-  <br />
   <app-di-playground></app-di-playground>
-  <br />
 
   <!-- before 08/23/2023 -->
   <app-palindrome-list></app-palindrome-list>
-  <br />
   <app-city-filter></app-city-filter>
-  <br />
   <app-add-to-list></app-add-to-list>
-  <br />
+</div>
 </div>
